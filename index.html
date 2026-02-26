@@ -1,19 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scappa dal matrix</title>
-    <link rel="icon" href="/img/favicon.png">
-    <link href="styles/style.css" rel="stylesheet" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Blackjack (Deck of Cards API)</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="img/favicon.png" />
 </head>
 <body>
-    Hello World!
-    <img class="background"
-    src="img/background.png"
-    />
+  <header class="header">
+    <h1>Blackjack</h1>
+    <div class="shoe-info">
+      <span id="shoe-remaining">Remaining: —</span>
+      <button id="new-shoe-button" class="button secondary">New Shoe</button>
+    </div>
+  </header>
+
+  <div class="table">
+    <div class="hand dealer">
+      <h2>Dealer <span id="dealer-total" class="total">—</span></h2>
+      <div id="dealer-cards" class="cards"></div>
+    </div>
+
+    <div class="hand player">
+      <h2>Player <span id="player-total" class="total">—</span></h2>
+      <div id="player-cards" class="cards"></div>
+    </div>
+
+    <div class="controls">
+      <button id="deal-button" class="button primary">Deal</button>
+      <button id="hit-button" class="button" disabled>Hit</button>
+      <button id="stand-button" class="button" disabled>Stand</button>
+      <button id="new-hand-button" class="button" disabled>New Hand</button>
+    </div>
+
+    <div class="status">
+      <div id="status-text">Click Deal to start.</div>
+    </div>
+</div>
+
+  <script src="js/main.js" type="module"></script>
 </body>
 </html>
