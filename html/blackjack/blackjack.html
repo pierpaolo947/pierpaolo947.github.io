@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Blackjack</title>
+  <link rel="stylesheet" href="css/blackjack/styles.css" />
+  <link rel="icon" href="img/favicon.png" />
+</head>
+<body>
+  <header class="header">
+    <h1>Blackjack</h1>
+    <div class="shoe-info">
+      <span id="shoe-remaining">Remaining: —</span>
+      <button id="new-shoe-button" class="button secondary">New Shoe</button>
+    </div>
+  </header>
+
+  <div class="table">
+    <div class="hand dealer">
+      <h2>Dealer <span id="dealer-total" class="total">—</span></h2>
+      <div id="dealer-cards" class="cards"></div>
+    </div>
+
+    <div class="hand player">
+      <h2>Player <span id="player-total" class="total">—</span></h2>
+      <div id="player-cards" class="cards"></div>
+    </div>
+
+    <div class="controls">
+      <button id="deal-button" class="button primary">Deal</button>
+      <button id="hit-button" class="button" disabled>Hit</button>
+      <button id="stand-button" class="button" disabled>Stand</button>
+      <button id="new-hand-button" class="button" disabled>New Hand</button>
+    </div>
+
+    <div class="status">
+      <div id="status-text">Click Deal to start.</div>
+    </div>
+  </div>
+  <footer class="footer">
+    <p>Repo <a href="https://github.com/pierpaolo947/pierpaolo947.github.io" target="_blank" rel="noopener">git</a></p>
+
+
+  <script src="js/blackjack/main.js" type="module"></script>
+</body>
+</html>
