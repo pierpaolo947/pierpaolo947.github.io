@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Drawer</title>
+    <script src="/js/functiondrawer/functiondrawer.js" defer></script>
+</head>
+
+<body>
+    <a href="/index.html"><--</a>
+    <h1>Function Drawer</h1>
+    <canvas id="turtle" width="1000" height="1000"></canvas>
+
+    <label for="name">scrivi la tua funzione qui</label>
+
+    <input type="text" id="funzione" name="name" requiredsize="8" />
+    <button class="draw-btn" onclick="disegnafunzione(), recuperaValore()">disegna</button>
+    <button class="clear-btn" onclick="clearCanvas()">cancella</button>
+</body>
+
+</html>
