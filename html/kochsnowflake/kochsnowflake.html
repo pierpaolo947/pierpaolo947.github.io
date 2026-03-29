@@ -1,26 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Turtle</title>
     <script src="/js/kochsnowflake/kochsnowflake.js" defer> </script>
+    <link rel="icon" href="img/favicon.png" />
+    <link rel="stylesheet" href="/css/project-dark.css" />
+
 </head>
+
 <body>
-    <a href="/index.html"><--</a>
+    <a class="back-link" href="/index.html"><--</a>
     <h1>Koch snowflake</h1>
-    <div>
-        <canvas id="canvas" height="1000" width="1000"> </canvas>
-        <div>
-            <div>
+
+    <main class="layout">
+        <canvas id="canvas" height="1000" width="1000"></canvas>
+
+        <section class="controls">
+            <div class="control-group">
                 <label id="recursionLabel" for="recursionInput">Recursion</label>
                 <input id="recursionInput" type="range" min="1" max="7" value="4">
             </div>
-            <div>
+            <div class="control-group">
                 <label id="lengthLabel" for="lengthInput">Zoom:</label>
                 <input id="lengthInput" type="range" min="50" max="450" value="75">
             </div>
-        </div>
-    </div>
+        </section>
+    </main>
 </body>
+
 </html>

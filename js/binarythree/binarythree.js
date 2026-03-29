@@ -104,17 +104,17 @@ function toRadian(degrees) {
 
 function clear(ts = 350) { //ts is trunk size
     ctx.clearRect(0, 0, width, height);
-    ctx.fillStyle = "white";
+    ctx.fillStyle = "#050805";
     ctx.fillRect(0, 0, width, height);
     ctx.fillRect(0, height / 2 + ts, width, height - (height / 2 + ts));
     ctx.beginPath();
-    ctx.strokeStyle = "black";
+    ctx.strokeStyle = "#7ef0a3";
     ctx.moveTo(width / 2, height / 2);
     ctx.lineTo(width / 2, height / 2 + ts);
     ctx.moveTo(0, height / 2 + ts);
     ctx.stroke();
     ctx.beginPath();
-    ctx.strokeStyle = "white";
+    ctx.strokeStyle = "#050805";
     ctx.moveTo(0, height / 2 + ts);
     ctx.lineTo(width, height / 2 + ts);
     ctx.stroke();

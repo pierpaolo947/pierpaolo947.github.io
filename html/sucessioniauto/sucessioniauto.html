@@ -4,22 +4,29 @@
 <head>
     <title>Successione Autosomigliante</title>
     <script src="/js/sucessioniauto/sucessioniauto.js" defer></script>
+    <link rel="icon" href="img/favicon.png" />
+    <link rel="stylesheet" href="/css/project-dark.css" />
+
 </head>
 
 <body>
-    <a class="back" href="/index.html"><--</a>
+    <a class="back-link" href="/index.html"><--</a>
     <h1>Successione Autosomigliante</h1>
-    <canvas id="turtleCanvas" width="1000" height="1000"></canvas>
-    <div class="controls">
-        <div>
-            <label id="recursionLabel" for="recursionInput">Recursion</label>
-            <input id="recursionInput" type="range" min="1" max="16" value="4">
+    <main class="layout">
+        <div class="canvas-wrap">
+            <canvas id="turtleCanvas" width="1000" height="1000"></canvas>
         </div>
-        <div>
-            <label id="lengthLabel" for="lengthInput">Zoom:</label>
-            <input id="lengthInput" type="range" min="5" max="100" value="30">
-        </div>
-    </div>
+        <section class="controls">
+            <div class="control-group">
+                <label id="recursionLabel" for="recursionInput">Recursion</label>
+                <input id="recursionInput" type="range" min="1" max="16" value="4">
+            </div>
+            <div class="control-group">
+                <label id="lengthLabel" for="lengthInput">Zoom:</label>
+                <input id="lengthInput" type="range" min="5" max="100" value="30">
+            </div>
+        </section>
+    </main>
 
 </body>
 

@@ -1,5 +1,7 @@
-const canvas = document.getElementById("turtle");
+const canvas = document.querySelector("#turtle");
 const ctx = canvas.getContext("2d");
+const drawbtn = document.querySelector("#draw-btn");
+const clearbtn = document.querySelector("#clear-btn");
 const turtle = {
     x:0,
     y: 0,
@@ -199,3 +201,12 @@ function disegnagriglia(){
 
 disegnagriglia();
 disegnaAssi();
+
+drawbtn.addEventListener('click', () => {
+    disegnafunzione();
+    recuperaValore();
+});
+
+clearbtn.addEventListener('click', () => {
+    clearCanvas();
+});

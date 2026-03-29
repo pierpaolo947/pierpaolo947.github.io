@@ -6,7 +6,7 @@ console.log(canvas);
 const width = canvas.width;
 const height = canvas.height;
 const ctx = canvas.getContext("2d");
-ctx.strokeStyle = "rgb(0 0 0)";
+ctx.strokeStyle = "rgb(158 255 191)";
 ctx.lineWidth = 2;
 const r = width / 2;
 let insideP = 0;
@@ -66,6 +66,7 @@ pointAdder.addEventListener("keydown", (e) => {
 const reset = document.querySelector("#reset");
 reset.addEventListener("click", () => {
     ctx.clearRect(0, 0, width, height);
+    ctx.strokeStyle = "rgb(158 255 191)";
     ctx.beginPath();
     ctx.arc(width / 2, height / 2, r, 0, 2 * Math.PI);
     ctx.stroke();

@@ -8,7 +8,7 @@ const textArea = document.querySelector("#text");
 const width = canvas.width;
 const height = canvas.height;
 const ctx = canvas.getContext("2d");
-ctx.strokeStyle = "rgb(0 0 0)";
+ctx.strokeStyle = "rgb(158 255 191)";
 ctx.lineWidth = 2;
 const r = width / 2;
 
@@ -29,6 +29,7 @@ let h = (width / 2) / attempts;
 
 let calcPI = () => {
     sumOfAreas = 0;
+    ctx.strokeStyle = "rgb(120 230 156)";
     for (let i = 0; i < attempts; ++i) {
         let hI = Math.sqrt(r * r - Math.pow(h * i, 2));
         ctx.lineWidth = 0.8;
@@ -58,6 +59,8 @@ rectangles.addEventListener("input", (e) => {
     ctx.clearRect(0, 0, width, height);
     attempts = rectangles.value;
     h = (width / 2) / attempts
+    ctx.strokeStyle = "rgb(158 255 191)";
+    ctx.lineWidth = 2;
     ctx.beginPath();
     ctx.arc(width / 2, height / 2, r, 0, 2 * Math.PI);
     ctx.stroke();

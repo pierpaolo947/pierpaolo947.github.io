@@ -6,18 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Function Drawer</title>
     <script src="/js/functiondrawer/functiondrawer.js" defer></script>
+    <link rel="icon" href="img/favicon.png" />
+    <link rel="stylesheet" href="/css/project-dark.css" />
+
 </head>
 
 <body>
-    <a href="/index.html"><--</a>
+    <a class="back-link" href="/index.html"><--</a>
     <h1>Function Drawer</h1>
-    <canvas id="turtle" width="1000" height="1000"></canvas>
-
-    <label for="name">scrivi la tua funzione qui</label>
-
-    <input type="text" id="funzione" name="name" requiredsize="8" />
-    <button class="draw-btn" onclick="disegnafunzione(), recuperaValore()">disegna</button>
-    <button class="clear-btn" onclick="clearCanvas()">cancella</button>
+    <main class="layout">
+        <div class="canvas-wrap">
+            <canvas id="turtle" width="1000" height="1000"></canvas>
+        </div>
+        <section class="controls">
+            <div class="control-group">
+                <label for="funzione">Scrivi la tua funzione qui</label>
+                <input type="text" id="funzione" name="name" requiredsize="8" />
+            </div>
+            <button id="draw-btn" class="draw-btn">Disegna</button>
+            <button id="clear-btn" class="clear-btn">Cancella</button>
+        </section>
+    </main>
 </body>
 
 </html>

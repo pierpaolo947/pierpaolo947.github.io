@@ -7,7 +7,7 @@ let turtle = {
     y: 0,
     angle: 0,
     penDown: false,
-    color: "black",
+    color: "#35d26b",
     moveForward(l) {
         ctx.strokeStyle = this.color;
         ctx.moveTo(this.x, this.y);
@@ -89,7 +89,7 @@ function drawEdge(l, n) {
 }
 
 function clear() {
-    ctx.fillStyle = "white";
+    ctx.fillStyle = "#050805";
     ctx.fillRect(0, 0, width, height);
     ctx.fillRect(0, 0, width, height);
 }

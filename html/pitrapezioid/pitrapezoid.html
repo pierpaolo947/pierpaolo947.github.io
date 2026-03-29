@@ -1,23 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trapezoid for PI</title>
     <script src="/js/pitrapezoid/pitrapezoid.js" defer></script>
+    <link rel="icon" href="img/favicon.png" />
+    <link rel="stylesheet" href="/css/project-dark.css" />
+
 </head>
+
 <body>
-    <a href="/index.html"><--</a>
+    <a class="back-link" href="/index.html"><--</a>
     <h1>Trapezoid simulation</h1>
-    <div>
-        <canvas id="Canvas" width="1000" height="1000"></canvas>
-    </div>
-    
-    <div>
-        <textarea id="text" placeholder="(Pi = 3.14)" readonly style="resize: none;" disabled></textarea>
-        <label for="rectangles">Number of rectangles:</label>
-        <input type="range" name="rectangles" id="rectangles" autocomplete="off" min="0" max="1000" step="1" value="100">
- 
-    </div>
-    
+    <main class="layout">
+        <div class="canvas-wrap">
+            <canvas id="Canvas" width="1000" height="1000"></canvas>
+        </div>
+
+        <section class="controls">
+            <textarea id="text" placeholder="(Pi = 3.14)" readonly style="resize: none;" disabled></textarea>
+            <div class="control-group">
+                <label for="rectangles">Number of rectangles:</label>
+                <input type="range" name="rectangles" id="rectangles" autocomplete="off" min="0" max="1000" step="1"
+                    value="100">
+            </div>
+        </section>
+    </main>
+
 </body>

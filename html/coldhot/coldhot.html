@@ -1,18 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cold Or Hot</title>
     <script src="/js/coldhot/coldhot.js" defer></script>
+    <link rel="icon" href="img/favicon.png" />
+    <link rel="stylesheet" href="/css/project-dark.css" />
+
 
 </head>
+
 <body>
-    <a href="/index.html"><--</a>
+    <a class="back-link" href="/index.html"><--</a>
     <h1>Cold Or Hot</h1>
-    <canvas id="canvas" width="300" height="300"></canvas>
-    <button id="hot">HOT</button>
-    <button id="idk">idk</button>
-    <button id="cold">COLD</button>
+    <main class="layout">
+        <div class="canvas-wrap">
+            <canvas id="canvas" width="300" height="300"></canvas>
+        </div>
+        <section class="controls">
+            <button id="hot">HOT</button>
+            <button id="idk">idk</button>
+            <button id="cold">COLD</button>
+        </section>
+    </main>
 </body>
+
 </html>

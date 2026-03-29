@@ -22,6 +22,8 @@ function disegna(iterazioni, lunghezzaPasso) {
 
     // Pulisce il canvas prima di disegnare
     ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.fillStyle = "#050805";
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
 
     // Posizione iniziale (centrata) e direzione
     let x = canvas.width / 2;
@@ -30,7 +32,7 @@ function disegna(iterazioni, lunghezzaPasso) {
 
     ctx.beginPath();
     ctx.moveTo(x, y);
-    ctx.strokeStyle = "black"; // Colore della linea
+    ctx.strokeStyle = "#35d26b"; // Colore della linea
     ctx.lineWidth = 2;
 
     for (let bit of sequenza) {
